@@ -1,0 +1,13 @@
+# Setup
+
+This software has the requirements of the following components:
+
+ - PHP (Minimum version 6)
+ - PHP-PDO
+ - required PDO driver for your database
+   - currently only MariaDB is tested. other databases MAY NOT WORK!
+ - web server
+   - Apache:
+     - Only PHP is required to be installed
+   - Nginx:
+     - PHP and PHP-FPM is required
