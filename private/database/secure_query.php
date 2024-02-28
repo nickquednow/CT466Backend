@@ -32,7 +32,21 @@ function secureQuery(string $query, bool $expectResponse = true, ...$args)
                 while($row = $secure_query->fetch(PDO::FETCH_ASSOC)) {
                     array_push($retVal, $row);
                 }
-                return $retVal;
+                if(count($retVal))
+                {
+                    return $retVal;
+                }
+                else
+                {
+                    if($expectResponse)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
             } else if ($expectResponse) {
                 return false;
             } else {
