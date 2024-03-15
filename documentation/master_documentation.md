@@ -39,8 +39,10 @@ Due to permissions being important in controlling access, the following permissi
 2. User Allow
 3. Group Deny
 4. Group Allow
-5. Default Deny
-6. Default Allow
+5. Domain Deny
+6. Domain Allow
+7. Default Deny
+8. Default Allow
 
 This has specifically been used to allow for the most specific permission to be used first (with Denys taking higher priority), and having whatever is default, as last.
 <a name="defaults_default_options" id="defaults_default_options"></a>
