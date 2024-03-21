@@ -3,3 +3,8 @@ config/*.php
 
 
 **/temp.php
+
+public/manage
+public/mantisbt
+stubs
+.vscode

@@ -1,0 +1,10 @@
+/*add the following to the top of the generated HTML page to add styling:
+
+<link rel="stylesheet" href="style.css"></link>
+
+*/
+
+code {
+    background-color: lightgray;
+    padding: 3px;
+}

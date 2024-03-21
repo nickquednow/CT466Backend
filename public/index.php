@@ -20,7 +20,7 @@ function requestHandler(response){
     replyJSON =JSON.parse(response)
     table_html = "<table>"
     replyJSON.response.forEach(element => {
-        table_html += "<tr><td><span>" + element + "</span></td><td><input type=\"text\"></td></tr>";
+        table_html += "<tr><td><span>" + element.name + "</span></td><td><input type=\"" + element.type + "\"></td></tr>";
     });
     table_html += "</table><button onclick=\"submitFields()\">Submit</button>";
     document.getElementById("ret").innerHTML = table_html;
