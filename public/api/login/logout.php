@@ -10,7 +10,7 @@ if(isset($_GET["request"]))
 {
     die(JsonBuilder(array(array("name"=>"session","type"=>"string"))));
 }
-if(isset($_GET["request"]))
+if(isset($_GET["response"]))
 {
     die(JsonBuilder(array(array("name"=>"success","type"=>"boolean"))));
 }
